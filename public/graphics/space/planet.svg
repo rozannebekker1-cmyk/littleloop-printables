@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 110" role="img" aria-label="planet">
+  <circle cx="70" cy="55" r="34" fill="#a78bfa"/>
+  <ellipse cx="70" cy="55" rx="62" ry="16" fill="none" stroke="#fbbf24" stroke-width="10" transform="rotate(-12 70 55)"/>
+  <circle cx="70" cy="55" r="34" fill="#a78bfa" opacity=".85"/>
+  <circle cx="58" cy="45" r="5" fill="#c4b5fd"/>
+  <circle cx="84" cy="65" r="6" fill="#c4b5fd"/>
+</svg>

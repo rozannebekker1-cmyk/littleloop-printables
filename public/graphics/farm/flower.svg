@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="sunflower">
+  <circle cx="60" cy="60" r="14" fill="#8b5a2b"/>
+  <g fill="#ffd93d">
+    <ellipse cx="60" cy="25" rx="12" ry="24"/>
+    <ellipse cx="60" cy="95" rx="12" ry="24"/>
+    <ellipse cx="25" cy="60" rx="24" ry="12"/>
+    <ellipse cx="95" cy="60" rx="24" ry="12"/>
+    <ellipse cx="36" cy="36" rx="12" ry="24" transform="rotate(-45 36 36)"/>
+    <ellipse cx="84" cy="84" rx="12" ry="24" transform="rotate(-45 84 84)"/>
+    <ellipse cx="84" cy="36" rx="12" ry="24" transform="rotate(45 84 36)"/>
+    <ellipse cx="36" cy="84" rx="12" ry="24" transform="rotate(45 36 84)"/>
+  </g>
+</svg>

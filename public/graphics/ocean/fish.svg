@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 90" role="img" aria-label="fish">
+  <ellipse cx="70" cy="45" rx="44" ry="26" fill="#38bdf8"/>
+  <path d="M108 45l32-24v48z" fill="#0ea5e9"/>
+  <circle cx="50" cy="38" r="5" fill="#111827"/>
+  <path d="M70 20c10 10 10 40 0 50" stroke="#e0f2fe" stroke-width="6" fill="none"/>
+</svg>

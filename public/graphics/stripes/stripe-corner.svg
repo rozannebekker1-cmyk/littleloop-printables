@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="stripe corner">
+  <path d="M0 0h160v160H0z" fill="#fff"/>
+  <path d="M-20 40L40-20h28L-20 68z" fill="#fca5a5"/>
+  <path d="M-20 92L92-20h28L-20 120z" fill="#fde68a"/>
+  <path d="M8 180L180 8v28L36 180z" fill="#93c5fd"/>
+  <path d="M72 180L180 72v28L100 180z" fill="#86efac"/>
+</svg>

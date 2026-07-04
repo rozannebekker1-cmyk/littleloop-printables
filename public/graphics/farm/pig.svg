@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 120" role="img" aria-label="pig">
+  <ellipse cx="75" cy="65" rx="52" ry="38" fill="#ffb3c7"/>
+  <circle cx="48" cy="58" r="6" fill="#111827"/>
+  <circle cx="102" cy="58" r="6" fill="#111827"/>
+  <ellipse cx="75" cy="78" rx="18" ry="12" fill="#ff7fa3"/>
+  <circle cx="69" cy="78" r="3" fill="#111827"/>
+  <circle cx="81" cy="78" r="3" fill="#111827"/>
+  <path d="M38 32l-15-16 4 26zM112 32l15-16-4 26z" fill="#ff8fb1"/>
+</svg>

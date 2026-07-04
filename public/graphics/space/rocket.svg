@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 160" role="img" aria-label="rocket">
+  <path d="M65 10c28 22 34 67 18 103H47C31 77 37 32 65 10z" fill="#f8fafc" stroke="#111827" stroke-width="4"/>
+  <circle cx="65" cy="58" r="16" fill="#93c5fd" stroke="#111827" stroke-width="4"/>
+  <path d="M47 106L25 132l4-38zM83 106l22 26-4-38z" fill="#6366f1"/>
+  <path d="M52 114l13 38 13-38z" fill="#f97316"/>
+  <path d="M58 122l7 28 7-28z" fill="#fde047"/>
+</svg>

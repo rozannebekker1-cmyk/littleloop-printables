@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="starfish">
+  <path d="M61 8l13 34 36-2-29 22 14 34-34-20-34 20 14-34-29-22 36 2z" fill="#fb923c"/>
+  <circle cx="52" cy="56" r="3" fill="#fed7aa"/>
+  <circle cx="69" cy="55" r="3" fill="#fed7aa"/>
+  <circle cx="61" cy="70" r="3" fill="#fed7aa"/>
+</svg>

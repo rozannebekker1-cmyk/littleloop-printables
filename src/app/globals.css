@@ -1,0 +1,399 @@
+:root {
+  --background: #fff9f2;
+  --panel: #ffffff;
+  --ink: #24323b;
+  --muted: #65727a;
+  --line: #d9e3df;
+  --blue: #6ab7d6;
+  --green: #9acb84;
+  --yellow: #ffd879;
+  --pink: #f5a8b8;
+  --shadow: 0 18px 50px rgba(48, 65, 72, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(255, 216, 121, 0.26), transparent 32rem),
+    linear-gradient(180deg, #fff9f2 0%, #f4fbfb 100%);
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.appShell {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #58717a;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: clamp(2.2rem, 4vw, 4.25rem);
+  line-height: 1;
+}
+
+.tagline {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.15rem;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(300px, 430px) 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.controlsPanel {
+  display: grid;
+  gap: 18px;
+}
+
+.controlGroup {
+  padding: 20px;
+  border: 1px solid rgba(154, 203, 132, 0.35);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 10px 28px rgba(48, 65, 72, 0.08);
+}
+
+.controlGroup h2 {
+  margin-bottom: 14px;
+  font-size: 1.05rem;
+}
+
+.radioGrid {
+  display: grid;
+  gap: 10px;
+}
+
+.radioCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fbfefd;
+  color: #2d424a;
+  cursor: pointer;
+}
+
+.radioCard:has(input:checked) {
+  border-color: var(--blue);
+  background: #eef9fd;
+  box-shadow: inset 0 0 0 2px rgba(106, 183, 214, 0.18);
+}
+
+.radioCard input {
+  accent-color: #4d9dbc;
+}
+
+.themeSelect,
+.fieldGroup input,
+.fieldGroup textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.themeSelect {
+  min-height: 46px;
+  padding: 0 12px;
+}
+
+.formGrid {
+  display: grid;
+  gap: 14px;
+}
+
+.fieldGroup {
+  display: grid;
+  gap: 7px;
+}
+
+.fieldGroup span {
+  color: #435a63;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.fieldGroup input {
+  min-height: 44px;
+  padding: 10px 12px;
+}
+
+.fieldGroup textarea {
+  min-height: 96px;
+  padding: 12px;
+  resize: vertical;
+}
+
+.printButton {
+  min-height: 48px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0 22px;
+  background: #263840;
+  color: #ffffff;
+  font-weight: 800;
+  box-shadow: 0 12px 26px rgba(38, 56, 64, 0.22);
+  cursor: pointer;
+}
+
+.printButton:hover {
+  background: #17262d;
+}
+
+.previewPanel {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 4px 0 32px;
+}
+
+.printablePage {
+  position: relative;
+  width: 210mm;
+  min-height: 297mm;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.printableContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 297mm;
+  flex-direction: column;
+  padding: 20mm 18mm;
+}
+
+.reportHeader {
+  margin-bottom: 8mm;
+  padding-bottom: 7mm;
+  border-bottom: 2px solid #263840;
+  text-align: center;
+}
+
+.reportHeader p {
+  margin-bottom: 4px;
+  color: #53646b;
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.reportHeader h2 {
+  margin-bottom: 6px;
+  font-size: 1.8rem;
+  line-height: 1.15;
+}
+
+.reportHeader span {
+  color: #687b83;
+  font-size: 0.9rem;
+}
+
+.reportFields {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5mm;
+}
+
+.previewField {
+  min-height: 24mm;
+  padding: 4mm;
+  border: 1.5px solid #8a9aa1;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.previewField.large {
+  min-height: 36mm;
+}
+
+.previewField h3 {
+  margin-bottom: 3mm;
+  color: #263840;
+  font-size: 0.95rem;
+}
+
+.previewField p {
+  margin: 0;
+  color: #1f2f36;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.previewTheme-rainbow .reportHeader {
+  border-color: var(--pink);
+}
+
+.previewTheme-farm .reportHeader {
+  border-color: var(--green);
+}
+
+.previewTheme-ocean .reportHeader {
+  border-color: var(--blue);
+}
+
+.previewTheme-space .reportHeader {
+  border-color: #6b6fae;
+}
+
+.previewTheme-jungle .reportHeader {
+  border-color: #5a9a63;
+}
+
+.previewTheme-polka-dots .reportHeader {
+  border-color: #f2a3b6;
+}
+
+.previewTheme-stripes .reportHeader {
+  border-color: #ffd15d;
+}
+
+@media (max-width: 980px) {
+  .appShell {
+    padding: 22px;
+  }
+
+  .hero {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .previewPanel {
+    justify-content: flex-start;
+  }
+
+  .printablePage {
+    transform: scale(0.78);
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 700px) {
+  .appShell {
+    padding: 16px;
+  }
+
+  .printablePage {
+    transform: scale(0.54);
+  }
+
+  .previewPanel {
+    min-height: 620px;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+    background: #ffffff;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  .printablePage,
+  .printablePage * {
+    visibility: visible;
+  }
+
+  .appShell,
+  .workspace,
+  .previewPanel {
+    display: block;
+    width: 210mm;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero,
+  .controlsPanel {
+    display: none;
+  }
+
+  .printablePage {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 210mm;
+    min-height: 297mm;
+    border-radius: 0;
+    box-shadow: none;
+    transform: none;
+  }
+
+  .printableContent {
+    min-height: 297mm;
+    padding: 18mm 16mm;
+  }
+
+  .previewField {
+    border-color: #555555;
+    background: rgba(255, 255, 255, 0.94);
+  }
+}
