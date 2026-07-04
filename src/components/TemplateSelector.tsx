@@ -12,8 +12,8 @@ export function TemplateSelector({
   onChange,
 }: TemplateSelectorProps) {
   return (
-    <section className="controlGroup">
-      <h2>Template</h2>
+    <fieldset className="controlGroup">
+      <legend>Template</legend>
       <div className="radioGrid">
         {templates.map((template) => (
           <label className="radioCard" key={template.id}>
@@ -28,6 +28,6 @@ export function TemplateSelector({
           </label>
         ))}
       </div>
-    </section>
+    </fieldset>
   );
 }

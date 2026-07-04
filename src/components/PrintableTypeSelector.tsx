@@ -15,8 +15,8 @@ export function PrintableTypeSelector({
   onChange,
 }: PrintableTypeSelectorProps) {
   return (
-    <section className="controlGroup">
-      <h2>Printable Type</h2>
+    <fieldset className="controlGroup">
+      <legend>Printable Type</legend>
       <div className="radioGrid twoColumn">
         {options.map((option) => (
           <label className="radioCard" key={option.id}>
@@ -31,6 +31,6 @@ export function PrintableTypeSelector({
           </label>
         ))}
       </div>
-    </section>
+    </fieldset>
   );
 }

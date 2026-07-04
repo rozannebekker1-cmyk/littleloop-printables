@@ -19,7 +19,7 @@ export function RoutineChartPreview({ theme, values }: RoutineChartPreviewProps)
         <header className="reportHeader">
           <p>LittleLoop Printables</p>
           <h2>{values.title || "Daily Routine Chart"}</h2>
-          <span>{values.date || "Date"} · {theme.name} Theme</span>
+          <span>{values.date || "Date"} - {theme.name} Theme</span>
         </header>
 
         <div className="routineGrid">
