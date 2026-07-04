@@ -110,6 +110,10 @@ h1 {
   gap: 10px;
 }
 
+.radioGrid.twoColumn {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .radioCard {
   display: flex;
   align-items: center;
@@ -275,6 +279,45 @@ h1 {
   white-space: pre-wrap;
 }
 
+.routineGrid {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6mm;
+}
+
+.routineBlock {
+  display: flex;
+  min-height: 92mm;
+  flex-direction: column;
+  padding: 5mm;
+  border: 1.5px solid #778891;
+  border-radius: 10px;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    repeating-linear-gradient(
+      180deg,
+      transparent 0,
+      transparent 9mm,
+      rgba(119, 136, 145, 0.25) 9.2mm
+    );
+}
+
+.routineBlock h3 {
+  margin-bottom: 4mm;
+  padding-bottom: 3mm;
+  border-bottom: 1px solid #a7b5bb;
+  color: #263840;
+  font-size: 1.25rem;
+}
+
+.routineBlock p {
+  margin: 0;
+  color: #1f2f36;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
 .previewTheme-rainbow .reportHeader {
   border-color: var(--pink);
 }
@@ -395,5 +438,17 @@ h1 {
   .previewField {
     border-color: #555555;
     background: rgba(255, 255, 255, 0.94);
+  }
+
+  .routineBlock {
+    border-color: #555555;
+    background:
+      linear-gradient(rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94)) padding-box,
+      repeating-linear-gradient(
+        180deg,
+        transparent 0,
+        transparent 9mm,
+        rgba(85, 85, 85, 0.28) 9.2mm
+      );
   }
 }

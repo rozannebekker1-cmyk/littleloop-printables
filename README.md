@@ -1,6 +1,6 @@
 # LittleLoop Printables
 
-LittleLoop Printables is a small open-source MVP for creating printable A4 daily reports for preschools and childcare centres.
+LittleLoop Printables is a small open-source MVP for creating printable A4 daily reports and routine charts for preschools and childcare centres.
 
 It includes three simple templates:
 
@@ -9,6 +9,13 @@ It includes three simple templates:
 - Preschool Daily Report
 
 Users can fill in the report, choose a friendly local theme, preview the A4 page, and print it or save it as a PDF from the browser print dialog.
+
+The Daily Routine Chart includes editable blocks for:
+
+- Infant
+- Toddler
+- Preschool
+- Aftercare
 
 ## Tech Stack
 
@@ -45,8 +52,8 @@ npm run build
 
 ## Print or Save as PDF
 
-1. Select a report template.
-2. Fill in the daily report fields.
+1. Select Daily Report or Daily Routine Chart.
+2. Fill in the editable fields or routine blocks.
 3. Choose a theme.
 4. Use the live A4 preview to check the layout.
 5. Click **Print or Save PDF**.
